@@ -1,11 +1,14 @@
 <div class="header-wrapper">
   <ul class="menu-top">
-    <li class="item">
-      <a href="#" class="" data-toggle="modal", data-target="#signInModal">Sign in</a>
-    </li>
-    <li class="item">
-      <%= link_to 'Log out', destroy_user_session_path, class: "logout", method: :delete %>
-    </li>
+    <% unless user_signed_in? %>
+      <li class="item">
+        <a href="#" class="" data-toggle="modal", data-target="#signInModal">Sign in</a>
+      </li>
+    <% else %>
+      <li class="item">
+        <%= link_to 'Log out', destroy_user_session_path, class: "logout", method: :delete %>
+      </li>
+    <% end %>
   </ul>
   
 </div>
