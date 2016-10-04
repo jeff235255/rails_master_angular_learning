@@ -1,0 +1,57 @@
+#signInModal {
+  .modal-dialog {
+    width: 30%;
+  }
+
+  .nav-tabs.sign-in {
+    width: 90%;
+    margin: auto;
+
+    li {
+      width: 50%;
+      a {
+        background-color: #eeeeee;
+      }
+      &.active {
+        a {
+          background-color: white;
+          outline: none;
+          color: rgba(0,0,0,0.84);
+        }
+      }
+    }
+  }
+
+  .tabs-area {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .sign-in-action-wrapper {
+      a {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        outline: none;
+      }
+
+      .btn-signin-google {
+        background-color: #CC3E2F;
+        margin-bottom: 10px;
+        border: none;
+      }
+
+      .btn-signin-fb {
+        background-color: #4C66A4;
+        margin-bottom: 10px;
+        border: none;
+      }
+
+      .btn-signin-twitter {
+        background-color: #32b4e5;
+        margin-bottom: 10px;
+        border: none;
+      }
+    }
+  }
+}
