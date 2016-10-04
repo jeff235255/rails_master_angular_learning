@@ -1,7 +1,7 @@
 <div class="header-wrapper">
   <ul class="menu-top">
     <li class="item">
-      <a href="#" class="">Sign in</a>
+      <a href="#" class="" data-toggle="modal", data-target="#signInModal">Sign in</a>
     </li>
     <li class="item">
       <%= link_to 'Log out', destroy_user_session_path, class: "logout", method: :delete %>
